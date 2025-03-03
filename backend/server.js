@@ -17,7 +17,7 @@ app.use(express.json());
 
 // CORS Configuration
 app.use(cors({
-    origin: ["http://localhost:3000", "https://your-vercel-app.vercel.app"],
+    origin: ["http://localhost:3000", "https://taskzen-ft6awvtkc-bhavneet345s-projects.vercel.app/"],
     credentials: true,
 }));
 
