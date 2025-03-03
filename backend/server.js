@@ -18,7 +18,7 @@ app.use(express.json());
 // CORS Configuration
 const allowedOrigins = [
     "http://localhost:3000",
-    "https://taskzen-5hp86cfac-bhavneet345s-projects.vercel.app" // ✅ Update this with your frontend URL
+    "https://taskzen-13cvgn456-bhavneet345s-projects.vercel.app" // ✅ Update this with your frontend URL
 ];
 
 app.use(
