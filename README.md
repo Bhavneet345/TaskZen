@@ -30,6 +30,7 @@ Smart Task Manager is a full-stack web application that allows users to efficien
 - **State Management:** React Hooks
 - **Authentication:** NextAuth.js, OAuth (Google & GitHub)
 - **API Requests:** Fetch API with JWT Authentication
+- **Hosting:** Vercel
 
 ### **Backend** (Node.js + Express)
 
