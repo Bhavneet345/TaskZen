@@ -1,10 +1,10 @@
-# 🚀 Smart Task Manager
+# 🚀 TaskZen 
 
 ## 📌 Overview
 
-Smart Task Manager is a full-stack web application that allows users to efficiently manage tasks with AI-powered prioritization, authentication via Google/GitHub, and real-time task updates.
+TaskZen is a full-stack web application that allows users to efficiently manage tasks with AI-powered prioritization, authentication via Google/GitHub, and real-time task updates.
 
-🔗 **Live App:** [Smart Task Manager](https://taskzen-13cvgn456-bhavneet345s-projects.vercel.app)
+🔗 **Live App:** [TaskZen ](https://taskzen-13cvgn456-bhavneet345s-projects.vercel.app)
 
 🔧 **Backend API:** [TaskZen API](https://taskzen-7vws.onrender.com/)
 
