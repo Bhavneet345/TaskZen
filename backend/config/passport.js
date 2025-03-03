@@ -9,7 +9,7 @@ passport.use(
         {
             clientID: process.env.GOOGLE_CLIENT_ID,
             clientSecret: process.env.GOOGLE_CLIENT_SECRET,
-            callbackURL: "/api/auth/google/callback",  // Ensure this matches your auth routes
+            callbackURL: "https://taskzen-7vws.onrender.com/api/auth/google/callback",  // Ensure this matches your auth routes
         },
         async (accessToken, refreshToken, profile, done) => {
             try {
@@ -36,7 +36,7 @@ passport.use(
         {
             clientID: process.env.GITHUB_CLIENT_ID,
             clientSecret: process.env.GITHUB_CLIENT_SECRET,
-            callbackURL: "/api/auth/github/callback",
+            callbackURL: "https://taskzen-7vws.onrender.com/api/auth/github/callback",
         },
         async (accessToken, refreshToken, profile, done) => {
             try {

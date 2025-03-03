@@ -129,7 +129,7 @@ router.get("/google/callback", passport.authenticate("google", { failureRedirect
 
         const token = jwt.sign({ userId: user._id }, process.env.JWT_SECRET, { expiresIn: "1h" });
 
-        res.redirect(`http://localhost:3000/oauth/callback?token=${token}`);
+        res.redirect(`https://taskzen-5hp86cfac-bhavneet345s-projects.vercel.app/oauth/callback?token=${token}`);
     } catch (err) {
         res.status(500).json({ error: "Google authentication failed" });
     }
@@ -153,7 +153,7 @@ router.get("/github/callback", passport.authenticate("github", { failureRedirect
 
         const token = jwt.sign({ userId: user._id }, process.env.JWT_SECRET, { expiresIn: "1h" });
 
-        res.redirect(`http://localhost:3000/oauth/callback?token=${token}`);
+        res.redirect(`https://taskzen-5hp86cfac-bhavneet345s-projects.vercel.app/oauth/callback?token=${token}`);
     } catch (err) {
         res.status(500).json({ error: "GitHub authentication failed" });
     }

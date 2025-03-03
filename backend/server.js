@@ -16,10 +16,23 @@ const app = express();
 app.use(express.json());
 
 // CORS Configuration
-app.use(cors({
-    origin: ["http://localhost:3000", "https://taskzen-5hp86cfac-bhavneet345s-projects.vercel.app"],
-    credentials: true,
-}));
+const allowedOrigins = [
+    "http://localhost:3000",
+    "https://taskzen-5hp86cfac-bhavneet345s-projects.vercel.app" // ✅ Update this with your frontend URL
+];
+
+app.use(
+    cors({
+        origin: function (origin, callback) {
+        if (!origin || allowedOrigins.includes(origin)) {
+            callback(null, true);
+        } else {
+            callback(new Error("Not allowed by CORS"));
+        }
+        },
+        credentials: true, // ✅ Allow cookies/session storage
+    })
+);
 
 // Session Middleware (should be before passport)
 app.use(
