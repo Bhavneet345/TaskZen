@@ -53,6 +53,14 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     };
   
     checkAuth();
+    const urlParams = new URLSearchParams(window.location.search);
+    const tokenFromUrl = urlParams.get("token");
+
+    if (tokenFromUrl) {
+      localStorage.setItem("token", tokenFromUrl);
+      window.history.replaceState({}, document.title, "/dashboard");
+      checkAuth();
+    }
   }, []);  
 
   const login = async (email: string, password: string) => {

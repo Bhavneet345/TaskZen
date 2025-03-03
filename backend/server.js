@@ -31,6 +31,7 @@ app.use(
         }
         },
         credentials: true, // ✅ Allow cookies/session storage
+        methods: ["GET", "POST", "PUT", "DELETE"],
     })
 );
 
